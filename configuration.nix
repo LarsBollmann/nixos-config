@@ -106,6 +106,7 @@
      conda
      texliveFull
      gnumake
+     thunderbird
   ];
 
   programs.hyprland.enable = true;

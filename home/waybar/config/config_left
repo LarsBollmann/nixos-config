@@ -1,0 +1,82 @@
+{
+    //"layer": "top", // Waybar at top layer
+    "position": "left", // Waybar position (top|bottom|left|right)
+    //"gtk-layer-shell": true,
+    // "height": 28, // Waybar height (to be removed for auto height)
+    // "width": 30, // Waybar width
+    // Choose the order of the modules
+    "modules-center": ["wlr/workspaces"],
+    //"modules-right": ["pulseaudio", "bluetooth", "network", "backlight", "custom/bat0", "custom/weather", "clock", "tray"],
+
+    // Modules configuration
+    // "sway/workspaces": {
+    //     "disable-scroll": true,
+    //     "all-outputs": true,
+    //     "format": "{name}: {icon}",
+    //     "format-icons": {
+    //         "1": "",
+    //         "2": "",
+    //         "3": "",
+    //         "4": "",
+    //         "5": "",
+    //         "urgent": "",
+    //         "focused": "",
+    //         "default": ""
+    //     }
+    // },
+
+    //"mpd": {
+    //    "server": "127.0.0.1",
+    //    "port": 6600,
+    //    "tooltip": false,
+    //    "exec-if": "pgrep mpd",
+    //    //"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+    //    "format": "{stateIcon} {consumeIcon}{randomIcon}{artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+//        "format-disconnected": "Disconnected ",
+//        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+    //    "format-disconnected": "",
+    //    "format-stopped": "",
+    //    "unknown-tag": "N/A",
+    //    "interval": 2,
+    //    "max-length": 60,
+    //    "consume-icons": {
+    //        "on": " "
+    //    },
+    //    "random-icons": {
+    //        "on": "<span color=\"#f53c3c\"></span> ",
+    //        "off": " "
+    //    },
+    //    "repeat-icons": {
+    //        "on": " "
+    //    },
+    //    "single-icons": {
+    //        "on": "1 "
+    //    },
+    //    "state-icons": {
+    //        "paused": "",
+    //        "playing": ""
+    //    }
+   // },
+
+
+   "wlr/workspaces": {
+    "format": "{icon}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+    },
+    "persistent_workspaces":{
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+    }
+
+}
+}

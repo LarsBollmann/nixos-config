@@ -27,6 +27,7 @@
       url = "github:zsh-users/zsh-autosuggestions";
       flake = false;
     };
+
   };
 
   # `outputs` are all the build result of the flake.
@@ -39,7 +40,7 @@
   # 
   # The `@` syntax here is used to alias the attribute set of the
   # inputs's parameter, making it convenient to use inside the function.
-  outputs = { self, nixpkgs, home-manager, zsh-autosuggestions, ... }@inputs: {
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
       # By default, NixOS will try to refer the nixosConfiguration with
       # its hostname, so the system named `nixos-test` will use this one.
@@ -105,7 +106,7 @@
             home-manager.users.lars = import ./home;
             # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
             home-manager.extraSpecialArgs = {
-                zsh-autosuggestions = zsh-autosuggestions;
+                zsh-autosuggestions = inputs.zsh-autosuggestions;
             };
           }
         ];

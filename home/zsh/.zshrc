@@ -43,7 +43,7 @@ alias s="kitty +kitten ssh"
 # export VOLTA_HOME="$HOME/.volta"
 # export PATH="$VOLTA_HOME/bin:$PATH"
 
-# alias ls="lsd -la"
+alias ls="lsd -la"
 
 # # bun completions
 # [ -s "/home/lars/.bun/_bun" ] && source "/home/lars/.bun/_bun"

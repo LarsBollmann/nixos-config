@@ -107,6 +107,10 @@
      texliveFull
      gnumake
      thunderbird
+     telegram-desktop
+     slack
+     nextcloud-client
+     lsd
   ];
 
   programs.hyprland.enable = true;
@@ -119,6 +123,8 @@
       custom = "/home/lars/.oh-my-zsh/custom";
     };
   };
+
+  programs.steam.enable = true;
   
   users.defaultUserShell = pkgs.zsh;
 
